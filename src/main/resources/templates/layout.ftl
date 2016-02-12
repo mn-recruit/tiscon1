@@ -23,7 +23,7 @@
     <!-- styles -->
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/animate.min.css" rel="stylesheet">
+    <!--<link href="/css/animate.min.css" rel="stylesheet">-->
     <link href="/css/owl.carousel.css" rel="stylesheet">
     <link href="/css/owl.theme.css" rel="stylesheet">
 
@@ -47,10 +47,10 @@
  _________________________________________________________ -->
     <div id="top">
         <div class="container">
-            <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+            <div class="col-md-6 offer">
+                <a href="#" class="btn btn-success btn-sm">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
             </div>
-            <div class="col-md-6" data-animate="fadeInDown">
+            <div class="col-md-6">
                 <ul class="menu">
                     <#if principal??>
                     <li class="dropdown yamm-fw">
@@ -120,7 +120,7 @@
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand home" href="/" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="/">
                     <img src="/img/TISCON_LOGO.png" alt="TISCON logo" class="hidden-xs">
                     <img src="/img/TISCON_LOGO.png" alt="TISCON logo" class="visible-xs"><span class="sr-only">go to homepage</span>
                 </a>
@@ -239,7 +239,7 @@
 
         <!-- *** FOOTER ***
  _________________________________________________________ -->
-        <div id="footer" data-animate="fadeInUp">
+        <div id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
@@ -376,6 +376,10 @@
     <script src="/js/bootstrap-hover-dropdown.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
     <script src="/js/front.js"></script>
+    <script src="/js/jquery.lazyload.min.js"></script>
+    <script>
+    $("img").lazyload();
+    </script>
 
 </body>
 

@@ -478,6 +478,7 @@ h1 {
   /*  UPDATED! front pane, placed above back */
   /* back, initially hidden pane */
 }
+/*
 #content .product .flip-container {
   cursor: pointer;
   -webkit-perspective: 1000;
@@ -556,6 +557,7 @@ h1 {
     min-width: 100%;
   }
 }
+*/
 #content .product .text {
   padding: 10px 10px 0;
 }

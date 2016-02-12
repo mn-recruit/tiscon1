@@ -105,20 +105,16 @@
                                         <div class="flipper">
                                             <div class="front">
                                                 <a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}">
+						 
++                                                   <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-category-list">
++                                                   <!--
                                                     <img src=${item.image} alt=${item.title?html} class="img-responsive img-category-list">
-                                                </a>
-                                            </div>
-                                            <div class="back">
-                                                <a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}">
-                                                    <img src=${item.image} alt=${item.title?html} class="img-responsive img-category-list">
+						    -->
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}" class="invisible">
-                                    <img src=${item.image} alt=${item.title?html} class="img-responsive img-category-list">
-                                </a>
                                 <div class="text">
                                     <h3 class="text-category-list-title"><a href="/detail?genreId=${genreId}&subgenreId=${subgenreId}&itemId=${item.id}">${item.title}</a></h3>
                                     <p class="price">￥${item.price}</p>

@@ -8,6 +8,7 @@
                 <div class="item">
                     <img src="img/index-img1.jpg" alt="" class="img-responsive">
                 </div>
+		<!--
                 <div class="item">
                     <img class="img-responsive" src="img/index-img2.jpg" alt="">
                 </div>
@@ -17,6 +18,7 @@
                 <div class="item">
                     <img class="img-responsive" src="img/index-img4.jpg" alt="">
                 </div>
+		-->
             </div>
             <!-- /#main-slider -->
         </div>
@@ -84,26 +86,20 @@ _________________________________________________________ -->
                 <#list movieRank as item>
                     <div class="item">
                         <div class="product">
-                            <div class="flip-container">
                                 <div align="center">
                                     <p><h4>${item?counter}位</h4></p>
                                     <div class="flipper">
                                         <div class="front">
                                             <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
+                                            <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
+					    <!--
                                                 <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
-                                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
+						-->
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}" class="invisible">
-                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
-                            </a>
                             <div class="text">
                                 <h3><a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">${item.title?html}</a></h3>
                                 <p class="price">￥${item.price}</p>
@@ -131,25 +127,17 @@ _________________________________________________________ -->
                 <#list musicRank as item>
                     <div class="item">
                         <div class="product">
-                            <div class="flip-container">
                                 <div align="center">
                                     <p><h4>${item?counter}位</h4></p>
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="/detail?genreId=34&subgenreId=&itemId=${item.id}">
-                                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-music">
-                                            </a>
-                                        </div>
-                                        <div class="back">
-                                            <a href="/detail?genreId=34&subgenreId=&itemId=${item.id}">
-                                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-music" >
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
+                               <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
+ 
+                                  <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
+                                  <!--
+                                   <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
+                                  -->
+                               </a>
                             </div>
-                            <a href="/detail?genreId=34&subgenreId=&itemId=${item.id}" class="invisible">
-                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-music">
                             </a>
                             <div class="text">
                                 <h3><a href="/detail?genreId=34&subgenreId=&itemId=${item.id}">${item.title?html}</a></h3>
