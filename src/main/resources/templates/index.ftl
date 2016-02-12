@@ -7,7 +7,6 @@
             <div id="main-slider">
                 <div class="item">
                     <img data-original="img/index-img1.jpg" alt="" class="lazy img-responsive">
-                    <img src="img/index-img1.jpg" alt="" class="img-responsive">
                 </div>
 		<!--
                 <div class="item">
