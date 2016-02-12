@@ -6,7 +6,6 @@
         <div class="col-md-12">
             <div id="main-slider">
                 <div class="item">
-                    <img data-original="img/index-img1.jpg" alt="" class="lazy img-responsive">
                     <img src="img/index-img1.jpg" alt="" class="img-responsive">
                 </div>
 		<!--
@@ -89,15 +88,19 @@ _________________________________________________________ -->
                         <div class="product">
                                 <div align="center">
                                     <p><h4>${item?counter}位</h4></p>
-                                    <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
-
-				        <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
-				    	<!--
-                                        <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
-					-->
-                                    </a>
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
+                                            <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
+					    <!--
+                                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
+						-->
+                                            </a>
+					    </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
                             <div class="text">
                                 <h3><a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">${item.title?html}</a></h3>
                                 <p class="price">￥${item.price}</p>
@@ -125,20 +128,16 @@ _________________________________________________________ -->
                 <#list musicRank as item>
                     <div class="item">
                         <div class="product">
-                            <div class="flip-container">
                                 <div align="center">
                                     <p><h4>${item?counter}位</h4></p>
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <a href="/detail?genreId=34&subgenreId=&itemId=${item.id}">
-					    	<img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
-						<!--
-                                                <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-music">
-						-->
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
+                               <a href="/detail?genreId=33&subgenreId=&itemId=${item.id}">
+ 
+                                  <img data-original=${item.image} alt=${item.title?html} class="lazy img-responsive img-index-movie">
+                                  <!--
+                                   <img src=${item.image} alt=${item.title?html} class="img-responsive img-index-movie">
+                                  -->
+                               </a>
                             </div>
                             </a>
                             <div class="text">
